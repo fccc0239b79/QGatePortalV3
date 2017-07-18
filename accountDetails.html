@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Account Details</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/accountDetailsStyle.css" type="text/css">
+  <link rel="stylesheet" href="css/commonProperties.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="homeHeader">
+    <h2 class="logo">QGate Cloud Partner Portal</h2>
+    <h2 class="home">Manage Account</h2>
+  </div>
+
+  <nav class="navbar navbar-inverse bg-primary">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav ">
+        <li><a href="home.html">Home</a></li>
+        <li class="current"><a href="accountDetails.html">Account Details</a></li>
+        <li><a href="accountContacts.html">Account Contacts</a></li>
+        <li><a href="subscribtion.html">Subscriptions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="detailsContainer">
+    <div class="aName">
+      <h5>Account Name:</h5>
+      <p class="markName" id="markName"></p>
+      <p class="accountOptions"><a href="accountManagement.html">Back</a></p>
+      <p class="accountOptions" onclick="deleteAccount()" id="del">Delete Account</p>
+      <p class="accountOptions"><a href="#" id="editAccount">Edit Account</a></p>
+    </div>
+    <div class="aAddress">
+      <h5>Address:</h5>
+      <div class="addressDetails">
+        <p id="firstParagraph"></p>
+        <p id="secondParagraph"></p>
+        <p id="thirdParagraph"></p>
+        <p id="fourthParagraph"></p>
+        <p id="fifthParagraph"></p>
+        <p id="sixthParagraph"></p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- New Account Panel -->
+  <div id="myModal" class="modal">
+
+    <!-- Account content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <form id="newContainer">
+        <div class="editContainer">
+
+          <div class="input-groups">
+            <p>Address:</p>
+          </div>
+
+          <div class="input-groups">
+            <label for="">Street:</label>
+            <input type="text" class="form-control" id="street" value="123 Acacia Avenue">
+          </div>
+
+          <div class="input-groups">
+            <label for="">Street:</label>
+            <input type="text" class="form-control" id="street2" value="West Quay">
+          </div>
+
+          <div class="input-groups">
+            <label for="">City:</label>
+            <input type="text" class="form-control" id="city" value="Southampton">
+          </div>
+
+          <div class="input-groups">
+            <label for="">State or Province:</label>
+            <input type="text" class="form-control" id="state" value="Hampshire">
+          </div>
+
+          <div class="input-groups">
+            <label for="">Postal Code:</label>
+            <input type="text" class="form-control" id="postCode" value="SO18 2HX">
+          </div>
+
+          <div class="input-groups">
+            <label for="">Country</label>
+            <select class="form-control" id="selectCountry">
+                                               <option>United kingdom</option>
+                                               <option>United States of America</option>
+                                               <option>Germany</option>
+                                               <option>France</option>
+                                         </select>
+
+            <button type="button" name="button" id="updateBtn">Update</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <!-- <script src="scripts/accountDeleteUpdate.js"></script> -->
+  <script src="scripts/accountDeleteUpdateV2.js"></script>
+</body>
+
+</html>

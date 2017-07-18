@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+      <head>
+            <meta charset="utf-8">
+            <title>Accounts</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/accountsStyle.css" type="text/css">
+            <link rel="stylesheet" href="css/commonProperties.css" type="text/css">
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      </head>
+      <body>
+            <div class="homeHeader">
+                  <h2 class="logo">QGate Cloud Partner Portal</h2>
+                  <h2 class="home">Account Management</h2>
+            </div>
+
+            <nav class="navbar navbar-inverse bg-primary">
+                  <div class="container-fluid">
+                        <ul class="nav navbar-nav ">
+                              <li><a href="home.html">Home</a></li>
+                              <li class="current"><a href="accountManagement.html">Accounts</a></li>
+                              <li><a href="subscribtion.html">Subscriptions</a></li>
+                        </ul>
+                  </div>
+            </nav>
+
+            <div class="addSearch">
+                  <form action="#" class="searchBar">
+                        <div class="input-group">
+                              <input type="text" class="form-control" id="mySearch" placeholder=" Search Account" name="search" onkeyup="searchFunction()">
+
+                        </div>
+                  </form>
+                  <a href="#" class="add" id="newAccount">Add Account</a>
+            </div>
+
+            <div class="accountsTable">
+                  <table id="myTable">
+                        <thead>
+                              <tr>
+                                    <th>Account</th>
+                                    <th>City</th>
+                                    <th>Country</th>
+                                    <th>Region</th>
+                              </tr>
+                        </thead>
+                        <tbody id="tableBody">
+
+                        </tbody>
+                  </table>
+            </div>
+
+            <!-- New Account Panel -->
+            <div id="myModal" class="modal">
+
+                  <!-- Account content -->
+                  <div class="modal-content">
+                        <span class="close">&times;</span>
+
+                        <form id="newContainer">
+                              <div class="editContainer">
+                                    <div class="input-groups">
+                                          <label for="accountName">Account Name:</label>
+                                          <input type="text" class="form-control" id="acName">
+                                    </div>
+
+                                    <div class="input-groups">
+                                          <label for="">Operational Region:</label>
+                                          <select class="form-control" id="selectRegion">
+                                              <option>United kingdom</option>
+                                              <option>United States of America</option>
+                                              <option>Germany</option>
+                                              <option>France</option>
+                                          </select>
+                                    </div>
+
+                                   <div class="input-groups">
+                                         <p>Address:</p>
+                                   </div>
+
+                                    <div class="input-groups">
+                                          <label for="">Street:</label>
+                                          <input type="text" class="form-control" id="street" >
+                                    </div>
+
+                                    <div class="input-groups">
+                                          <label for="">Street:</label>
+                                          <input type="text" class="form-control" id="street2" >
+                                    </div>
+
+                                    <div class="input-groups">
+                                          <label for="">City:</label>
+                                          <input type="text" class="form-control" id="city" >
+                                    </div>
+
+                                    <div class="input-groups">
+                                          <label for="">State or Province:</label>
+                                          <input type="text" class="form-control" id="state" >
+                                    </div>
+
+                                    <div class="input-groups">
+                                          <label for="">Postal Code:</label>
+                                          <input type="text" class="form-control" id="postCode" >
+                                    </div>
+
+                                    <div class="input-groups">
+                                          <label for="">Country</label>
+                                          <select class="form-control" id="selectCountry">
+                                               <option>United kingdom</option>
+                                               <option>United States of America</option>
+                                               <option>Germany</option>
+                                               <option>France</option>
+                                         </select>
+
+                                          <button type="button" name="button" id="saveBtn">Save</button>
+                                    </div>
+
+                              </div>
+                        </form>
+                  </div>
+
+            </div>
+            <script src="scripts/accountRequestV2.js"></script>
+            <!-- <script src="scripts/accountRequest.js"></script> -->
+            <!-- <script src="scripts/accountManagement.js"></script> -->
+      </body>
+</html>
