@@ -1,0 +1,273 @@
+.navbar {
+      width: 97% !important;
+}
+
+
+/* add - Seach */
+
+
+.addSearch {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 0 50px 20px 20px;
+      /*border: 1px solid;*/
+}
+
+.addSearch > .searchBar {
+      flex: 1;
+}
+
+#mySearch {
+      height: 36px;
+      margin-top: 1px;
+      padding: 2px 0 2px 0 ;
+      border: 2px solid;
+      z-index: 0;
+      flex-basis: 80em;
+
+}
+
+.searchBar > .input-group {
+      width: 60%;
+      flex-flow: nowrap;
+      display: flex;
+      flex-direction: row;
+      margin: 0px;
+}
+
+.input-group > .btn {
+      padding-top: 0;
+}
+
+.addSearch > .add {
+      align-items: flex-end;
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 16px;
+}
+
+/* Table */
+.accountsTable {
+      display: flex;
+      border: 2px solid;
+      margin: 20px;
+      height: 30em;
+      font-size: 20px;
+      flex-direction: column;
+      align-items: center;
+}
+
+.accountsTable > table {
+      width: 95%;
+      margin: 20px;
+}
+
+tr:nth-child(even){
+      background-color: #f2f2f2;
+}
+
+tbody {
+      border: 2px solid;
+}
+
+td {
+      padding: 5px;
+}
+
+th {
+      padding: 0 0 15px 5px;
+}
+
+.accountLink {
+      text-decoration: underline;
+}
+
+/*---------------------------------------- New Account Container ------------------------------------------ */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#newLink {
+      text-decoration: underline;
+}
+
+/*---------------------------------------- New Account Data ------------------------------------------ */
+
+#newContainer {
+      margin: 20px 100px 20px 20px;
+      padding: 30px 0 30px 80px;
+      border: 2px solid;
+}
+
+.input-groups {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+}
+
+label, input, select {
+      flex-basis: 200px;
+}
+
+.input-groups > label {
+      flex-flow: wrap;
+      font-weight: lighter;
+      padding-top: 5px;
+}
+
+.input-groups > p {
+      font-weight: bold;
+      text-decoration: underline;
+}
+
+.input-groups > button {
+      margin-left: auto;
+      margin-right: 10em;
+      width: 100px;
+}
+
+/* -------------------------------------------------- @media --------------------------------------------------*/
+
+@media screen and (max-width: 410px) {
+
+      .homeHeader > h2 {
+            font-size: 15px;
+      }
+
+      .navbar {
+            width: 90% !important;
+      }
+
+      .searchBar > .input-group {
+            width: 95%;
+            flex-flow: wrap;
+            flex-direction: row;
+      }
+
+      .input-group > .btn {
+            margin-left: 55%;
+      }
+
+      .homeContainer {
+            width: 90%;
+            align-self: center;
+      }
+
+      .accountsTable {
+            height: 20em;
+      }
+
+      .accountsTable > table {
+            width: 90% !important;
+            margin: 10px;
+            font-size: 15px;
+      }
+
+}
+@media screen and (max-width: 500px) and (min-width: 410px) {
+
+      .homeHeader > h2 {
+            font-size: 18px;
+      }
+
+      .logo {
+            flex: 1;
+      }
+
+      .homeHeader > .home{
+            flex-direction: row;
+            align-self: flex-end;
+      }
+
+      .navbar {
+            width: 90% !important;
+      }
+
+      .homeContainer {
+            width: 80%;
+            align-self: center;
+      }
+
+      .accountsTable {
+            height: 20em;
+      }
+
+      .accountsTable > table {
+            font-size: 15px;
+      }
+}
+
+@media screen and (max-width: 800px) and (min-width: 500px){
+
+      .homeHeader > h2 {
+            font-size: 24px;
+      }
+
+      .navbar {
+            width: 90% !important;
+      }
+
+      .searchBar > .input-group {
+            width: 90%;
+      }
+
+      .homeContainer {
+            width: 70%;
+            align-self: center;
+      }
+
+      .accountsTable {
+            height: 20em;
+      }
+
+      .accountsTable > table {
+            font-size: 17px;
+      }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px){
+
+      .searchBar > .input-group {
+            width: 80%;
+      }
+
+      .homeContainer {
+            width: 60%;
+            align-self: center;
+      }
+}

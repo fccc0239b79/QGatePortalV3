@@ -1,0 +1,174 @@
+.detailsContainer {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid;
+      margin: 20px;
+      font-size: 16px;
+      height: 70%;
+}
+
+.aName {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      justify-content: center;
+      color: white;
+      background: #0060a8;
+      background: -webkit-linear-gradient(to bottom, #0074cc 14%, #0060a8 96%);
+      background: -o-linear-gradient(to bottom, #0074cc 14%, #0060a8 96%);
+      background: -moz-linear-gradient(to bottom, #0074cc 14%, #0060a8 96%);
+      background: linear-gradient(to bottom, #0074cc 14%, #0060a8 96%);
+}
+
+.aName > h5 {
+      margin: 0 0 0 20px;
+      font-weight: lighter;
+      font-size: 16px;
+}
+
+.aName > .markName {
+      flex: 1;
+      font-weight: bold;
+      margin: 0 0 0 30px;
+}
+
+.aName > .accountOptions {
+      flex-direction: row;
+      align-self: flex-end;
+      margin: 0 10px 0 10px;
+      text-decoration: underline;
+}
+
+.aName > .accountOptions > a{
+      color: white;
+}
+
+.aAddress {
+      display: flex;
+      padding: 20px;
+      margin-top: 10px;
+      align-items: flex-start;
+      justify-content:  flex-start;
+}
+
+.aAddress > h5 {
+      margin: 0 0 0 20px;
+      font-weight: lighter;
+      font-size: 16px;
+}
+
+.aAddress > .addressDetails {
+      margin-left: 5em;
+      line-height: 1em;
+      font-weight: bolder;
+}
+
+/*---------------------------------------- New Account Container ------------------------------------------ */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#newLink {
+      text-decoration: underline;
+}
+
+/*---------------------------------------- New Account Data ------------------------------------------ */
+
+#newContainer {
+      margin: 20px 100px 20px 20px;
+      padding: 30px 0 30px 80px;
+      border: 2px solid;
+}
+
+.input-groups {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+}
+
+label, input, select {
+      flex-basis: 200px;
+}
+
+.input-groups > label {
+      flex-flow: wrap;
+      font-weight: lighter;
+      padding-top: 5px;
+}
+
+.input-groups > p {
+      font-weight: bold;
+      text-decoration: underline;
+}
+
+.input-groups > button {
+      margin-left: auto;
+      margin-right: 10em;
+      width: 100px;
+}
+
+@media screen and (max-width: 410px) {
+
+      .detailsContainer {
+            font-size: 13px;
+            margin: 20px;
+      }
+
+      .aName > .markName {
+            margin: 0 30px 0 20px;
+      }
+      .aName > h5 {
+            margin: 0;
+      }
+
+      .aAddress > h5 {
+            margin: 0;
+      }
+
+      .aAddress > .addressDetails {
+            margin-left: 2em;
+      }
+
+}
+
+@media screen and (max-width: 500px) and (min-width: 410px) {
+
+      .detailsContainer {
+            font-size: 13px;
+      }
+
+}
